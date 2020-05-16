@@ -1,0 +1,18 @@
+.col-padding {
+    padding-top: 30px;
+}
+
+.card-design {
+    padding:10px;
+    background-color:#383636 !important;
+}
+
+.card-text-design {
+    text-align:center; 
+    color:white; 
+    padding-top: 5px;   
+}
+
+.card-img-design {
+    filter: drop-shadow(2px 2px 2px black);    
+}
