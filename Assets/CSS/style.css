@@ -68,6 +68,15 @@ h1, h6, p, a{
     }
 }
 
+@media screen and (width: 812px){
+    h1 {
+        font-size: 5vh;
+    }
+    h6, p, a{
+        font-size: 3.25vh;
+    }
+}
+
 @media screen and (orientation: landscape){
     .main-row{
         height: 100vh;
