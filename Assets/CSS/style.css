@@ -1,0 +1,89 @@
+.background-image {
+    background-image: url("../Images/_MG_8953.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-row{
+    height: 85vh;
+}
+
+.col-opacity {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.card-opacity {
+    border: 0px !important;
+    margin-top:15px !important;
+    background-color: transparent !important;
+}
+
+.footer {
+    text-align: center;
+    color:grey;
+    font-size: 1.5vh;
+    height: 5vh;
+    
+}
+
+h1, h6, p, a{
+    font-family: 'Indie Flower', cursive;
+}
+
+.linkedin{
+    width: 100px;
+    height: 30px;
+    background: url(../Images/linkedIn.png) no-repeat center/contain!important;
+    padding: 3px;
+    opacity:0.7;
+}
+
+.linkedin:hover {
+    opacity:1;
+}
+
+
+@media screen and (max-width: 567px) {
+
+    .col-opacity {
+        background-color: transparent;
+    }
+
+    .card-opacity {
+        background: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+    h6 , p, a{
+        font-size: 2vh;
+    }
+    
+}
+
+@media screen and (height: 568px){
+    .footer{
+        height:20px;
+    }
+}
+
+@media screen and (orientation: landscape){
+    .main-row{
+        height: 100vh;
+    }
+}
+
+@media screen and (min-height: 1024px){
+    .main-row{
+        height: 100vh;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .card-opacity {
+        margin-top: 6vh !important;
+    }
+}
