@@ -27,7 +27,7 @@
     
 }
 
-h1, h6, p, a{
+h1, h6, p, a, label, .form-font {
     font-family: 'Indie Flower', sans-serif;
 }
 
