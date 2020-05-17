@@ -2,6 +2,7 @@
     background-image: url(../Images/mainbackground.jpg) !important;
     background-size: cover;
     background-position: center;
+    
 }
 
 .main-row{
@@ -33,7 +34,7 @@ h1, h6, p, a{
 .linkedin{
     width: 100px;
     height: 30px;
-    background: url(../Images/linkedIn.png) no-repeat center/contain!important;
+    background: url(../Images/linkedIn.png) no-repeat center/contain !important;
     padding: 3px;
     opacity:0.7;
 }
