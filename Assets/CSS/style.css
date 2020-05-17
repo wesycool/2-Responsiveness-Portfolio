@@ -2,8 +2,13 @@
     background-image: url(../Images/mainbackground.jpg) !important;
     background-size: cover;
     background-position: center;
-    
+    position: fixed; 
+    width: 100vw; 
+    height:100vh; 
+    left:0;
+    top:15;
 }
+
 
 .main-row{
     height: 85vh;
@@ -17,6 +22,10 @@
     border: 0px !important;
     margin-top:15px !important;
     background-color: transparent !important;
+}
+
+.card-padding {
+    padding: 20px;
 }
 
 .footer {
@@ -55,26 +64,40 @@ h1, h6, p, a, label, .form-font {
     }
 
     h1 {
-        font-size: 5vh;
+        font-size: 5vh !important;
     }
-    h6 , p, a{
-        font-size: 2vh;
+    h6 , p, a, label, .form-font{
+        font-size: 2vh !important;
+    }
+
+    .footer {
+        background: rgba(255, 255, 255, 1) !important;
+    }
+
+    .footer-row {
+        margin-top: 1vh;
+    }
+
+}
+
+@media screen and (width: 568px) {
+    h1 {
+        font-size: 30px !important;
     }
     
-}
+    h6 , p, a, label, .form-font{
+        font-size: 14px !important;
+    }
 
-@media screen and (height: 568px){
-    .footer{
-        height:20px;
+    .card-padding {
+        padding: 150px;
+        padding-top: 0px;
     }
 }
 
-@media screen and (width: 812px){
-    h1 {
-        font-size: 5vh;
-    }
-    h6, p, a{
-        font-size: 3.25vh;
+@media screen and (min-width: 812px) and (max-width: 823px){
+    h6, p, a, label, .form-font{
+        font-size: 3.25vh !important;
     }
 }
 
@@ -83,6 +106,28 @@ h1, h6, p, a, label, .form-font {
         height: 100vh;
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 823px){
+    .contact-h1 {
+        font-size: 6vh !important;
+        margin-bottom: 0px;
+    }
+    
+    label, .form-font {
+        font-size: 2vh !important;
+    }
+
+    .form-group {
+        margin-bottom: 0px !important;
+    }
+
+    .contact-button {
+        margin-top: 10px !important;
+    }
+}
+
+
+
 
 @media screen and (min-height: 1024px){
     .main-row{
