@@ -1,17 +1,20 @@
-.background-image {
+body {
+    font-family: 'Indie Flower', sans-serif !important;
+}
+
+.navbar-brand {
+    font-family: 'Rock Salt', sans-serif !important;
+}
+
+.bg-img {
     background-image: url(../Images/mainbackground.jpg) !important;
     background-size: cover;
     background-position: center;
-    position: fixed; 
-    width: 100vw; 
-    height:100vh; 
-    left:0;
-    top:15;
+    background-attachment: fixed;
 }
 
-
-.main-row{
-    height: 85vh;
+.main-row, .bg-img{
+    height: calc(100vh - 3.8125rem);
 }
 
 .col-opacity {
@@ -33,11 +36,7 @@
     color:grey;
     font-size: 1.5vh;
     height: 5vh;
-    
-}
-
-h1, h6, p, a, label, .form-font {
-    font-family: 'Indie Flower', sans-serif;
+    padding-top: 1vh;
 }
 
 .linkedin{
@@ -54,6 +53,13 @@ h1, h6, p, a, label, .form-font {
 
 
 @media screen and (max-width: 567px) {
+    body{
+        font-size: 2vh !important;
+    }
+    
+    h1 {
+        font-size: 5vh !important;
+    }
 
     .col-opacity {
         background-color: transparent;
@@ -63,58 +69,34 @@ h1, h6, p, a, label, .form-font {
         background: rgba(255, 255, 255, 0.7) !important;
     }
 
-    h1 {
-        font-size: 5vh !important;
-    }
-    h6 , p, a, label, .form-font{
-        font-size: 2vh !important;
-    }
-
     .footer {
         background: rgba(255, 255, 255, 1) !important;
     }
-
-    .footer-row {
-        margin-top: 1vh;
-    }
-
+    
 }
 
 @media screen and (width: 568px) {
-    h1 {
-        font-size: 30px !important;
-    }
-    
-    h6 , p, a, label, .form-font{
-        font-size: 14px !important;
-    }
-
-    .card-padding {
-        padding: 150px;
-        padding-top: 0px;
+    .card-padding { 
+        padding: 0px;
+        padding-right: 100px;
+        padding-left:100px;
     }
 }
 
-@media screen and (min-width: 812px) and (max-width: 823px){
-    h6, p, a, label, .form-font{
-        font-size: 3.25vh !important;
-    }
-}
-
-@media screen and (orientation: landscape){
-    .main-row{
-        height: 100vh;
-    }
-}
 
 @media screen and (orientation: landscape) and (max-width: 823px){
-    .contact-h1 {
-        font-size: 6vh !important;
+    h1 {
+        font-size: 7vh !important;
         margin-bottom: 0px;
     }
     
     label, .form-font {
         font-size: 2vh !important;
+        margin-bottom: 1vh !important;
+    }
+
+    .card-text {
+        font-size: 3.5vh !important;
     }
 
     .form-group {
@@ -124,21 +106,26 @@ h1, h6, p, a, label, .form-font {
     .contact-button {
         margin-top: 10px !important;
     }
+
+    .bg-img{
+        height: 100%;
+    }
+
 }
 
 
-
-
 @media screen and (min-height: 1024px){
-    .main-row{
-        height: 100vh;
-    }
-
     .footer {
         font-size: 12px;
     }
 
     .card-opacity {
         margin-top: 6vh !important;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-height: 1024px){
+    .bg-img{
+        height: 100%;
     }
 }
