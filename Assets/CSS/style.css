@@ -1,3 +1,4 @@
+/* Custom font */
 body {
     font-family: 'Indie Flower', sans-serif !important;
 }
@@ -6,6 +7,8 @@ body {
     font-family: 'Rock Salt', sans-serif !important;
 }
 
+
+/* Custom backgroun image */
 .bg-img {
     background-image: url(../Images/mainbackground.jpg) !important;
     background-size: cover;
@@ -17,6 +20,8 @@ body {
     height: calc(100vh - 3.8125rem);
 }
 
+
+/* Card for index.html & contact.html */
 .col-opacity {
     background: rgba(255, 255, 255, 0.7);
 }
@@ -31,14 +36,30 @@ body {
     padding: 20px;
 }
 
-.footer {
-    text-align: center;
-    color:grey;
-    font-size: 1.5vh;
-    height: 5vh;
-    padding-top: 1vh;
+
+/* Card design for portfolio.html */
+.col-padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
+.card-design {
+    padding:10px;
+    background-color:#383636 !important;
+}
+
+.card-text-design {
+    text-align:center; 
+    color:white; 
+    padding-top: 5px;   
+}
+
+.card-img-design {
+    filter: drop-shadow(2px 2px 2px black);    
+}
+
+
+/* LinkedIn Logo*/
 .linkedin{
     width: 100px;
     height: 30px;
@@ -52,6 +73,19 @@ body {
 }
 
 
+
+/* Footer for index.html & contact.html */
+.footer {
+    text-align: center;
+    color:grey;
+    font-size: 1.5vh;
+    height: 5vh;
+    padding-top: 1vh;
+}
+
+
+
+/* For mobile phone portrait */
 @media screen and (max-width: 567px) {
     body{
         font-size: 2vh !important;
@@ -75,6 +109,8 @@ body {
     
 }
 
+
+/* For iPhone 5/SE */
 @media screen and (width: 568px) {
     .card-padding { 
         padding: 0px;
@@ -84,6 +120,7 @@ body {
 }
 
 
+/* For mobile phone lanscape */
 @media screen and (orientation: landscape) and (max-width: 823px){
     h1 {
         font-size: 7vh !important;
@@ -114,6 +151,7 @@ body {
 }
 
 
+/* For iPad & iPad Pro */
 @media screen and (min-height: 1024px){
     .footer {
         font-size: 12px;
@@ -124,6 +162,8 @@ body {
     }
 }
 
+
+/* For mobile phone & iPad portraits */
 @media screen and (orientation: portrait) and (max-height: 1024px){
     .bg-img{
         height: 100%;
